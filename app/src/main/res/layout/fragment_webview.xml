@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Fullscreen WebView below it -->
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:focusable="false"
+        android:background="@color/lb_tv_white" />
+
+    <!-- Top-left button -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_marginTop="130dp"
+        android:orientation="vertical"
+        android:elevation="12dp">
+
+    <Button
+        android:id="@+id/reloadTheScripts"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:text="1"
+        android:background="#ff9f1c"
+
+        android:layout_marginHorizontal="28dp" />
+        <!--        android:background="@drawable/reload_icon"-->
+
+
+    <Button
+        android:id="@+id/enterFullScreen"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:text="2"
+        android:background="#31572c"
+
+        android:layout_marginHorizontal="28dp" />
+<!--        android:background="@drawable/baseline_access_time_24"-->
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/cursorView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="top|start"
+        android:src="@drawable/baseline_album_24"
+        android:visibility="visible"
+        android:elevation="14dp"/>
+
+
+
+</FrameLayout>
